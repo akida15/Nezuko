@@ -11,6 +11,6 @@ WORKDIR /nezuko
 
 COPY . /nezuko
 
-RUN yarn
+RUN yarn install --network-concurrency 1
 
 CMD ["node", "koyeb.js"]
